@@ -1,0 +1,39 @@
+---
+title: "Higher Correlations Finder"
+author: "Rodrigo Quintana"
+date: "2017-11-28"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+## Description
+
+HCF, as your name states, is a tool for finding the variable that best correlates with a response variable of interest in a given dataset
+
+## What does it do?
+
+- Gives you the name of the variable with higher correlation with your response variable, its correlation index, tells you if it´s positive or negative and plots both variables to give you a visual hint on the nature of that correlation
+
+```{r pressure}
+plot(mtcars$disp,mtcars$mpg)
+
+```
+
+
+
+
+
+## What problem does it solve?
+
+- It gives you a quick summary on what variable happens to relate the most to a response variable. This can be used to choose a predictor in a simple predictive model and to get insight on the potential explanations for the variable of interest, if the goal is more descriptive
+
+## Conclusion
+
+This is a very simple and easy to use app for getting quick insight on a dataset. You'll came out of it with a nice and concise synthesis of the higher correlated variable and with a cool visualization for a very first exploratory approach
+
+
+
